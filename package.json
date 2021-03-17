@@ -1,26 +1,18 @@
 {
   "name": "nodejs-socket",
   "version": "1.0.0",
-  "description": "A chat application for sending and receiving messages in real time.",
+  "description": "simple chat app with nodejs and socket",
   "main": "app.js",
   "scripts": {
     "open": "start http://localhost:3000",
     "start": "npm run open && nodemon server"
   },
-  "keywords": [
-    "ejs",
-    "css",
-    "js",
-    "chat",
-    "node.js",
-    "socket.io"
-  ],
   "author": "felig",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.5",
+    "ejs": "^2.6.2",
     "express": "^4.17.1",
-    "nodemon": "^2.0.7",
-    "socket.io": "^3.1.0"
+    "nodemon": "^1.19.1",
+    "socket.io": "^2.2.0"
   }
 }

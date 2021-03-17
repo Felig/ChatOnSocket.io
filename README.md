@@ -4,6 +4,7 @@ Task: https://github.com/rolling-scopes-school/tasks/blob/master/tasks/stage-0/p
 
 ```shell
 $ git clone https://github.com//Felig/ChatOnSocket.io.git -b main
+$ cd ChatOnSocket.io
 $ npm install
 $ npm run start
 ```

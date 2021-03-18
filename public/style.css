@@ -4,10 +4,11 @@
     text-decoration: none;
     user-select: none;
     background-color: #4CAF50;
-    padding: .7em 1.5em;
+    padding: 11px 10px;
     outline: none;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     border-radius: 5px;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 .button_style:hover {
@@ -39,83 +40,71 @@ html {
 
 body {
     height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 6fr 1fr;
 }
 
 header {
-    text-align: center;
-    height: 10%;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    display: grid;
+    align-items: center;
+    text-align: left;
 }
 
 h1 {
+    margin: 20px 0px 10px 53px;
     font-family: 'Comfortaa', sans-serif;
-    margin: 0px;
-    color: #034405;
-    font-size: 8vh;
+    color: #018005;
+    font-size: 35px;
 }
 
 section#change_username_sect {
-    background-color: rgb(163, 255, 224);
-    height: 10%;
-}
-
-section#chatroom {
-    /* border: 3px solid lightblue; */
-    height: 70%;
-    overflow: auto;
-}
-
-section#input_zone {
-    height: 10%;
-    text-align: center;
-    background-color: rgb(163, 255, 224);
-}
-
-.vertical-align {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    display: grid;
+    grid-template-columns: 200px 290px 1fr;
+    align-items: center;
 }
 
 input#username {
     margin-left: 10px;
     display: inline-block;
     font-family: 'Comfortaa', sans-serif;
-    height: 80%;
-    font-size: 3vh;
-    /* float: left;
-    display: inline-block;
-    margin-left: 10px;
-    min-width: 70%;
-    max-width: 75%;
-    height: 80%;
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 3vh; */
+    height: 42px;
+    font-size: 14px;
 }
 
 button#send_username {
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: inline-block;
-    height: 80%;
+    height: 42px;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+section#chatroom {
+    overflow: auto;
+}
+
+section#input_zone {
+    background: linear-gradient(45deg, #C5DDE8, #EECFBA);
+    display: grid;
+    grid-template-columns: 2fr 140px 1fr;
+    align-items: center;
 }
 
 input#message {
-    float: left;
-    display: inline-block;
     margin-left: 10px;
-    min-width: 70%;
-    max-width: 75%;
-    height: 80%;
+    height: 42px;
     font-family: 'Comfortaa', sans-serif;
-    font-size: 3vh;
+    font-size: 14px;
 }
 
 button#send_message {
-    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 10px;
-    display: inline-block;
-    height: 80%;
-    width: 120px;
+    height: 42px;
 }
 
 .alert {
